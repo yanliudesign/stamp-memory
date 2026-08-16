@@ -1,6 +1,6 @@
 ---
 name: stamp-memory
-description: Generate original small folk-print stamps from any theme, phrase, object, memory, or supplied photograph. Always use this skill when the user asks for 印章、图章、藏书票、橡皮章、手刻章、民艺小印、stamp illustration, ex libris, bookplate, or wants a photo turned into a stamp. Preserve this skill's warm paper, restrained charcoal/cobalt/vermilion/moss palette, large negative space, naive carved linework, compact human typography, and intimate keepsake tone without copying any reference image. Return both a production-ready image prompt and a generated raster image unless the user explicitly requests prompt-only.
+description: Generate original small folk-print stamps from any theme, phrase, object, memory, or supplied photograph. Always use this skill when the user asks for 印章、图章、藏书票、橡皮章、手刻章、民艺小印、stamp illustration, ex libris, bookplate, or wants a photo turned into a stamp. Preserve this skill's warm paper, restrained charcoal/cobalt/vermilion/moss palette, large negative space, naive carved linework, compact human typography, and intimate keepsake tone without copying any reference image. When a real image-generation tool is available, generate the final image directly; otherwise return only a production-ready prompt. Never create an SVG or drawn preview as a substitute.
 ---
 
 # Stamp Memory
@@ -13,13 +13,16 @@ The result should feel found in a personal archive, bookplate drawer, market pri
 
 ## Default Deliverable
 
-Always create:
+Choose exactly one delivery branch before producing artifacts:
 
-1. one generated raster image;
-2. the exact production-ready image prompt used;
-3. a short recipe naming the ink, stamp shape, carving treatment, text treatment, and originality changes.
+1. **Image-generation tool available:** compile the production-ready prompt, use the tool to generate the final image directly, then return the final image, the exact prompt used, and a short recipe.
+2. **No image-generation tool available:** return the production-ready prompt and short recipe only. State briefly that image generation is unavailable in the current environment.
 
-Save generated files under `/Users/yanliu/Desktop/Claude skills/stamp-memory/` when file output is available. Return prompt-only only when the user explicitly asks for it or no image-generation tool is available.
+An image-generation tool means a tool that synthesizes a final bitmap image from a text prompt or supplied image. File-writing, SVG editing, HTML rendering, Canvas, diagramming, plotting, screenshots, and rasterizing hand-authored vector code do not count.
+
+Never create an SVG, HTML canvas, programmatic drawing, placeholder image, mock preview, or locally rendered approximation to stand in for image generation. The prompt-only branch is the complete and correct fallback.
+
+Save a generated final image under `/Users/yanliu/Desktop/Claude skills/stamp-memory/` when the image-generation tool exposes file output. Do not create an image file in the prompt-only branch.
 
 Default to **one isolated stamp**, not a sheet, collection, mockup, or repeated pattern. Generate a stamp sheet only when the user explicitly requests multiple stamps.
 
@@ -218,14 +221,19 @@ Always exclude:
 
 1. Parse the input and choose one symbol, one container, one dominant ink, and optional exact text.
 2. Compile the five-paragraph prompt.
-3. Generate a raster image with the available image-generation tool. Use a supplied image as a content reference.
-4. Inspect at full size and thumbnail size.
-5. Regenerate once when a quality gate fails, tightening only the failed constraint.
-6. Return the image, exact prompt, and recipe.
+3. Check whether a real image-generation tool is available before creating any artifact.
+4. If available, generate the final image directly with that tool. Use a supplied image as a content reference.
+5. Inspect the generated image at full size and thumbnail size.
+6. Regenerate once when a quality gate fails, tightening only the failed constraint.
+7. Return the final image, exact prompt, and recipe.
+
+If no real image-generation tool is available, stop after compiling the prompt. Return the exact prompt and recipe without creating or rendering any preview file. Do not use SVG, code, local graphics libraries, screenshots, or document-rendering tools as a workaround.
 
 If exact text renders incorrectly after one retry, generate a text-light or text-free base stamp and report the intended wording separately. Never claim malformed lettering is correct.
 
 ## Output Format
+
+When a final image was generated:
 
 ````markdown
 **生成图**
@@ -247,6 +255,26 @@ If exact text renders incorrectly after one retry, generate a text-light or text
 - Originality: [one sentence naming major structural departures from references]
 ````
 
+When image generation is unavailable:
+
+````markdown
+**最终 Prompt**
+
+```text
+[the production-ready prompt]
+```
+
+**本次配方**
+
+- Ink: [dominant ink + optional accent]
+- Shape: [container choice]
+- Carving: [line/mass/negative-space treatment]
+- Type: [text treatment or no text]
+- Originality: [one sentence naming major structural departures from references]
+
+当前环境没有可用的图片生成工具，因此未生成预览图。
+````
+
 ## Quality Gate
 
 Before returning, verify:
@@ -262,7 +290,8 @@ Before returning, verify:
 - Does the result avoid mockup, logo, sticker, polished-vector, and wax-seal aesthetics?
 - When a photo is supplied, are identity and signature features preserved?
 - Do at least five structural features differ from every style reference?
-- Was a raster image generated unless prompt-only was requested or generation was unavailable?
+- If a real image-generation tool was available, was the final image generated directly with it?
+- If image generation was unavailable, did the response contain only the prompt and recipe, with no SVG, code-rendered preview, placeholder, or claimed image output?
 
 ## Example Triggers
 
