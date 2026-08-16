@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <filter id="paper"><feTurbulence type="fractalNoise" baseFrequency=".7" numOctaves="3" seed="61" result="n"/><feComponentTransfer in="n"><feFuncA type="table" tableValues="0 .035"/></feComponentTransfer><feBlend in="SourceGraphic" mode="multiply"/></filter>
+    <filter id="ink" x="-8%" y="-8%" width="116%" height="116%"><feTurbulence type="fractalNoise" baseFrequency=".018 .07" numOctaves="2" seed="7" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="1.8"/></filter>
+  </defs>
+  <rect width="1024" height="1024" fill="#F4EFE5" filter="url(#paper)"/>
+  <g filter="url(#ink)">
+    <path d="M339 330 C425 313 598 315 681 334 C696 428 694 599 677 690 C591 708 421 706 339 687 C325 593 325 425 339 330 Z" fill="none" stroke="#214F9B" stroke-width="12"/>
+    <circle cx="420" cy="424" r="24" fill="#214F9B"/><path d="M489 424 C520 395 560 396 590 424 C559 451 520 452 489 424 Z" fill="#214F9B"/>
+    <path d="M628 398 L648 448 M653 397 L626 449" stroke="#214F9B" stroke-width="11" stroke-linecap="round"/>
+    <path d="M382 506 C436 494 583 494 639 507" stroke="#214F9B" stroke-width="8" stroke-linecap="round"/>
+    <text x="512" y="575" text-anchor="middle" fill="#24231F" font-family="Avenir Next, Helvetica, sans-serif" font-size="56" font-weight="700" letter-spacing="2">STAMP MEMORY</text>
+    <text x="512" y="627" text-anchor="middle" fill="#24231F" font-family="Avenir Next, Helvetica, sans-serif" font-size="31" letter-spacing="4">8 EXAMPLES</text>
+  </g>
+</svg>

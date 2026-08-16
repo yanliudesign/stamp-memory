@@ -21,11 +21,25 @@
 
 它延续的是一套视觉系统，而不是复制某张参考图：克制的炭黑、钴蓝、朱红与苔绿；略显朴拙的手刻边缘；紧凑而有人味的字体；以及私人纪念物般的沟通气质。
 
-<p align="center">
-  <img src="./summer-night-walk.png" width="72%" alt="一枚描绘夏夜散步者走向月牙的民艺手刻印章">
-</p>
+## 案例
 
-<p align="center"><strong>示例：“做一枚关于夏夜散步的印章。”</strong></p>
+<table>
+  <tr>
+    <td align="center" width="33%"><a href="./summer-night-walk.png"><img src="./summer-night-walk.png" width="100%" alt="夏夜散步印章"></a><br><sub>夏夜散步</sub></td>
+    <td align="center" width="33%"><a href="./read-slowly-bookplate.png"><img src="./read-slowly-bookplate.png" width="100%" alt="慢慢读藏书票印章"></a><br><sub>慢慢读</sub></td>
+    <td align="center" width="33%"><a href="./starting-again-sprout.png"><img src="./starting-again-sprout.png" width="100%" alt="重新开始嫩芽印章"></a><br><sub>重新开始</sub></td>
+  </tr>
+  <tr>
+    <td align="center" width="33%"><a href="./grandmothers-garden.png"><img src="./grandmothers-garden.png" width="100%" alt="外婆花园浇水壶印章"></a><br><sub>外婆的花园</sub></td>
+    <td align="center" width="33%"><img src="./examples-index.png" width="100%" alt="Stamp Memory 八个案例索引"></td>
+    <td align="center" width="33%"><a href="./grazing-deer-memory.png"><img src="./grazing-deer-memory.png" width="100%" alt="照片转低头鹿印章"></a><br><sub>照片转印章</sub></td>
+  </tr>
+  <tr>
+    <td align="center" width="33%"><a href="./rainy-window.png"><img src="./rainy-window.png" width="100%" alt="雨窗印章"></a><br><sub>雨窗</sub></td>
+    <td align="center" width="33%"><a href="./pocket-orange.png"><img src="./pocket-orange.png" width="100%" alt="口袋橙子印章"></a><br><sub>口袋橙子</sub></td>
+    <td align="center" width="33%"><a href="./seaside-found-objects-sheet.png"><img src="./seaside-found-objects-sheet.png" width="100%" alt="十二枚海边拾物印章页"></a><br><sub>海边拾物</sub></td>
+  </tr>
+</table>
 
 ## 它能做什么
 
@@ -133,8 +147,8 @@ stamp-memory/
 ├── SKILL.md                 # 触发规则、工作流、视觉 DNA 与质量检查
 ├── README.md                # English documentation
 ├── README.zh.md             # 中文说明
-├── summer-night-walk.png    # 位图示例
-└── summer-night-walk.svg    # 可编辑的 SVG 母版
+├── examples-index.png       # 3×3 案例九宫格的中心索引卡
+└── *.png / *.svg            # 八个位图案例与对应的可编辑母版
 ```
 
 ## 原创性

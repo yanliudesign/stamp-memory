@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <filter id="paper"><feTurbulence type="fractalNoise" baseFrequency=".72" numOctaves="3" seed="17" result="n"/><feComponentTransfer in="n"><feFuncA type="table" tableValues="0 .035"/></feComponentTransfer><feBlend in="SourceGraphic" mode="multiply"/></filter>
+    <filter id="ink" x="-10%" y="-10%" width="120%" height="120%"><feTurbulence type="fractalNoise" baseFrequency=".02 .08" numOctaves="2" seed="9" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.3"/></filter>
+  </defs>
+  <rect width="1024" height="1024" fill="#F4EFE5" filter="url(#paper)"/>
+  <g fill="none" stroke="#C83A2B" stroke-linecap="round" stroke-linejoin="round" filter="url(#ink)">
+    <path d="M397 627 C453 613 565 613 624 627 C607 666 574 688 512 689 C451 688 416 667 397 627 Z" fill="#C83A2B" stroke-width="8"/>
+    <path d="M512 628 C510 574 513 522 527 472" stroke-width="15"/>
+    <path d="M521 520 C477 523 448 500 441 461 C482 451 515 472 521 520 Z" fill="#C83A2B" stroke-width="7"/>
+    <path d="M525 486 C548 445 580 428 617 439 C611 480 578 504 525 507 Z" fill="#C83A2B" stroke-width="7"/>
+    <path d="M424 645 C466 654 556 655 600 643" stroke="#F4EFE5" stroke-width="8"/>
+    <path d="M474 474 C487 485 497 497 505 511 M587 453 C565 465 549 480 537 498" stroke="#F4EFE5" stroke-width="7"/>
+  </g>
+</svg>

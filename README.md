@@ -21,11 +21,25 @@ Turn a sentence, object, memory, or supplied photograph into an original small p
 
 It preserves a visual system rather than copying a reference: restrained charcoal, cobalt, vermilion, and moss inks; hand-cut edges; compact human typography; and an intimate keepsake tone.
 
-<p align="center">
-  <img src="./summer-night-walk.png" width="72%" alt="A folk-print stamp of a person walking toward a crescent moon on a summer night">
-</p>
+## Examples
 
-<p align="center"><strong>Example: “Create a stamp about a summer-night walk.”</strong></p>
+<table>
+  <tr>
+    <td align="center" width="33%"><a href="./summer-night-walk.png"><img src="./summer-night-walk.png" width="100%" alt="Summer-night walk stamp"></a><br><sub>Summer-night walk</sub></td>
+    <td align="center" width="33%"><a href="./read-slowly-bookplate.png"><img src="./read-slowly-bookplate.png" width="100%" alt="Read slowly bookplate stamp"></a><br><sub>Read slowly</sub></td>
+    <td align="center" width="33%"><a href="./starting-again-sprout.png"><img src="./starting-again-sprout.png" width="100%" alt="Starting again sprout stamp"></a><br><sub>Starting again</sub></td>
+  </tr>
+  <tr>
+    <td align="center" width="33%"><a href="./grandmothers-garden.png"><img src="./grandmothers-garden.png" width="100%" alt="Grandmother's garden watering-can stamp"></a><br><sub>Grandmother's garden</sub></td>
+    <td align="center" width="33%"><img src="./examples-index.png" width="100%" alt="Stamp Memory eight examples index"></td>
+    <td align="center" width="33%"><a href="./grazing-deer-memory.png"><img src="./grazing-deer-memory.png" width="100%" alt="Photograph transformed into a grazing-deer stamp"></a><br><sub>Photo to stamp</sub></td>
+  </tr>
+  <tr>
+    <td align="center" width="33%"><a href="./rainy-window.png"><img src="./rainy-window.png" width="100%" alt="Rainy window stamp"></a><br><sub>Rainy window</sub></td>
+    <td align="center" width="33%"><a href="./pocket-orange.png"><img src="./pocket-orange.png" width="100%" alt="Pocket orange stamp"></a><br><sub>Pocket orange</sub></td>
+    <td align="center" width="33%"><a href="./seaside-found-objects-sheet.png"><img src="./seaside-found-objects-sheet.png" width="100%" alt="Sheet of twelve seaside found-object stamps"></a><br><sub>Seaside finds</sub></td>
+  </tr>
+</table>
 
 ## What it does
 
@@ -133,8 +147,8 @@ stamp-memory/
 ├── SKILL.md                 # Trigger rules, workflow, visual DNA, and QA gate
 ├── README.md                # English documentation
 ├── README.zh.md             # 中文说明
-├── summer-night-walk.png    # Example raster output
-└── summer-night-walk.svg    # Editable example master
+├── examples-index.png       # Center tile for the 3×3 example gallery
+└── *.png / *.svg            # Eight raster examples and editable masters
 ```
 
 ## Originality

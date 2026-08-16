@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1600" viewBox="0 0 1200 1600">
+  <defs>
+    <filter id="paper" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.68" numOctaves="3" seed="53" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0" result="gray"/>
+      <feComponentTransfer in="gray" result="faint">
+        <feFuncA type="table" tableValues="0 0.035"/>
+      </feComponentTransfer>
+      <feBlend in="SourceGraphic" in2="faint" mode="multiply"/>
+    </filter>
+    <filter id="ink" x="-12%" y="-12%" width="124%" height="124%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.022 0.081" numOctaves="2" seed="29" result="warp"/>
+      <feDisplacementMap in="SourceGraphic" in2="warp" scale="2.2" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="1600" fill="#F4EFE5" filter="url(#paper)"/>
+
+  <g fill="none" stroke="#214F9B" stroke-linecap="round" stroke-linejoin="round" filter="url(#ink)">
+    <!-- 01: scallop shell, broad and largest in the upper-left. -->
+    <g id="stamp-01" transform="translate(145 185) rotate(-5)">
+      <path d="M20 126 C24 68 57 20 111 15 C168 20 198 70 202 127 C170 154 54 155 20 126 Z" fill="#214F9B" stroke-width="7"/>
+      <path d="M111 28 L111 137 M79 34 L91 137 M48 57 L72 139 M143 34 L131 137 M174 58 L151 139" stroke="#F4EFE5" stroke-width="9"/>
+      <path d="M62 143 C82 134 139 134 160 143" stroke-width="9"/>
+    </g>
+
+    <!-- 02: rounded sea glass inside a loose oval. -->
+    <g id="stamp-02" transform="translate(468 123) rotate(7)">
+      <path d="M14 80 C18 26 54 3 109 13 C154 21 171 56 157 105 C143 148 100 163 53 145 C24 134 7 112 14 80 Z" stroke-width="7"/>
+      <path d="M50 50 C65 32 111 28 128 51 C141 70 132 111 111 126 C86 143 51 124 42 100 C36 82 38 65 50 50 Z" fill="#214F9B" stroke-width="5"/>
+      <path d="M65 61 C82 50 103 49 116 60 M57 91 C70 110 91 118 110 108" stroke="#F4EFE5" stroke-width="7"/>
+    </g>
+
+    <!-- 03: spiral shell, small and dense. -->
+    <g id="stamp-03" transform="translate(858 205) rotate(-8)">
+      <path d="M24 93 C20 46 52 13 96 15 C141 16 167 53 160 96 C153 137 111 158 70 143 C40 132 26 115 24 93 Z" fill="#214F9B" stroke-width="6"/>
+      <path d="M121 52 C95 34 60 50 56 79 C52 108 79 129 105 117 C128 106 132 78 116 66 C102 55 80 63 78 80 C76 94 91 104 102 96" stroke="#F4EFE5" stroke-width="9"/>
+      <path d="M38 119 C57 125 73 133 84 146" stroke="#F4EFE5" stroke-width="7"/>
+    </g>
+
+    <!-- 04: smooth pebble with three tide cuts. -->
+    <g id="stamp-04" transform="translate(190 505) rotate(9)">
+      <path d="M17 85 C25 37 59 10 106 15 C155 20 178 60 166 105 C155 145 113 161 70 149 C32 139 10 119 17 85 Z" fill="#214F9B" stroke-width="5"/>
+      <path d="M47 67 C77 55 109 53 141 62 M42 92 C78 81 113 82 145 93 M54 117 C83 110 111 111 132 120" stroke="#F4EFE5" stroke-width="8"/>
+    </g>
+
+    <!-- 05: driftwood, long and irregular. -->
+    <g id="stamp-05" transform="translate(470 455) rotate(-12)">
+      <path d="M11 94 C37 79 65 72 96 66 L151 33 L178 42 L154 65 C184 57 213 60 244 74 L238 95 C201 88 171 90 142 104 C102 123 58 127 17 115 Z" fill="#214F9B" stroke-width="5"/>
+      <path d="M57 96 C101 88 136 73 166 55 M112 101 C150 87 190 81 220 87" stroke="#F4EFE5" stroke-width="8"/>
+      <path d="M72 77 L51 54 M157 67 L171 43 M197 78 L218 58" stroke-width="10"/>
+    </g>
+
+    <!-- 06: crab claw, compact and offset right. -->
+    <g id="stamp-06" transform="translate(890 520) rotate(6)">
+      <path d="M43 155 C46 119 57 91 75 68 L99 84 C86 111 84 137 88 164 Z" fill="#214F9B" stroke-width="5"/>
+      <path d="M74 72 C55 45 59 19 85 10 C110 2 130 18 133 42 C116 32 101 35 94 50 C116 43 137 49 151 65 C137 91 104 98 79 82 Z" fill="#214F9B" stroke-width="6"/>
+      <path d="M82 61 C98 70 116 72 132 67 M58 117 C67 120 75 121 84 120" stroke="#F4EFE5" stroke-width="7"/>
+    </g>
+
+    <!-- 07: sea-bird feather, the tallest narrow mark. -->
+    <g id="stamp-07" transform="translate(126 835) rotate(-9)">
+      <path d="M85 15 C136 45 144 113 111 176 C87 218 55 241 31 246 C20 203 25 158 42 111 C56 72 70 41 85 15 Z" fill="#214F9B" stroke-width="5"/>
+      <path d="M88 38 C76 91 60 145 40 222 M75 76 L119 64 M65 108 L124 98 M55 143 L111 139 M48 177 L93 177" stroke="#F4EFE5" stroke-width="7"/>
+      <path d="M40 221 L26 266" stroke-width="9"/>
+    </g>
+
+    <!-- 08: sand dollar in an imperfect circular impression. -->
+    <g id="stamp-08" transform="translate(430 815) rotate(4)">
+      <path d="M17 110 C13 55 51 15 108 14 C165 14 203 53 199 111 C195 168 160 200 103 198 C48 196 20 165 17 110 Z" stroke-width="8"/>
+      <path d="M109 44 L124 89 L171 88 L133 115 L148 161 L108 133 L69 161 L83 115 L46 88 L93 89 Z" fill="#214F9B" stroke-width="5"/>
+      <path d="M109 62 L109 177 M56 101 L162 139 M162 101 L57 139" stroke="#F4EFE5" stroke-width="7"/>
+    </g>
+
+    <!-- 09: ribbon seaweed, borderless and airy. -->
+    <g id="stamp-09" transform="translate(862 856) rotate(10)">
+      <path d="M82 210 C70 164 80 124 53 88 C36 65 33 41 47 18 C78 45 88 73 77 105 C103 79 123 55 133 25 C155 55 149 86 124 111 C104 132 94 158 98 207" stroke-width="16"/>
+      <path d="M86 144 C53 140 31 123 18 96 M91 162 C123 158 147 143 163 121" stroke-width="13"/>
+      <circle cx="48" cy="18" r="8" fill="#214F9B" stroke="none"/>
+      <circle cx="133" cy="25" r="8" fill="#214F9B" stroke="none"/>
+    </g>
+
+    <!-- 10: beach rope knot in a soft rectangular tablet. -->
+    <g id="stamp-10" transform="translate(184 1240) rotate(5)">
+      <path d="M9 22 C63 12 145 14 195 24 C204 75 202 143 192 185 C141 197 62 196 15 184 C5 137 5 70 9 22 Z" stroke-width="7"/>
+      <path d="M35 101 C52 64 86 52 111 76 C131 94 117 121 93 126 C67 131 50 108 61 87 C75 61 115 61 139 84 C159 104 171 128 180 151" stroke-width="15"/>
+      <path d="M23 73 C49 76 70 85 86 104 M124 114 C148 108 169 94 190 72" stroke-width="11"/>
+    </g>
+
+    <!-- 11: limpet shell, low and wide. -->
+    <g id="stamp-11" transform="translate(504 1280) rotate(-6)">
+      <path d="M16 127 C39 70 69 31 111 18 C154 34 184 72 207 128 C160 146 63 146 16 127 Z" fill="#214F9B" stroke-width="6"/>
+      <path d="M111 31 L111 131 M80 45 L91 134 M51 72 L72 137 M143 46 L131 134 M173 73 L151 137" stroke="#F4EFE5" stroke-width="8"/>
+      <path d="M15 128 C63 145 162 146 208 128" stroke-width="8"/>
+    </g>
+
+    <!-- 12: tiny coral branch, smallest and lightly placed. -->
+    <g id="stamp-12" transform="translate(926 1275) rotate(8)">
+      <path d="M78 154 L79 102 M79 111 L49 77 M79 92 L108 60 M50 78 L34 50 M50 78 L24 91 M108 60 L126 33 M108 60 L138 73 M79 103 L97 129" stroke-width="14"/>
+      <circle cx="34" cy="50" r="8" fill="#214F9B" stroke="none"/>
+      <circle cx="24" cy="91" r="8" fill="#214F9B" stroke="none"/>
+      <circle cx="126" cy="33" r="8" fill="#214F9B" stroke="none"/>
+      <circle cx="138" cy="73" r="8" fill="#214F9B" stroke="none"/>
+      <circle cx="97" cy="129" r="8" fill="#214F9B" stroke="none"/>
+    </g>
+  </g>
+
+  <!-- Sparse paper-colored skips across several impressions. -->
+  <g fill="#F4EFE5" opacity="0.84">
+    <ellipse cx="294" cy="280" rx="11" ry="3" transform="rotate(-9 294 280)"/>
+    <ellipse cx="541" cy="231" rx="4" ry="13" transform="rotate(12 541 231)"/>
+    <ellipse cx="309" cy="606" rx="10" ry="3"/>
+    <ellipse cx="579" cy="546" rx="14" ry="3" transform="rotate(-12 579 546)"/>
+    <ellipse cx="963" cy="615" rx="4" ry="12"/>
+    <ellipse cx="512" cy="937" rx="12" ry="3" transform="rotate(7 512 937)"/>
+    <ellipse cx="612" cy="1372" rx="13" ry="3" transform="rotate(-4 612 1372)"/>
+  </g>
+</svg>
