@@ -10,7 +10,7 @@
 
 [![Version](https://img.shields.io/badge/VERSION-1.0.0-2ea44f?style=flat-square&labelColor=333)](./SKILL.md)
 [![Skills](https://img.shields.io/badge/SKILLS-1-2ea44f?style=flat-square&labelColor=333)](./SKILL.md)
-[![Stars](https://img.shields.io/github/stars/yanliudesign/stamp-memory?style=flat-square&label=STARS&color=e37f2c&labelColor=333)](https://github.com/yanliudesign/stamp-memory/stargazers)
+[![Stars](https://img.shields.io/github/stars/yanliudesign/stamp-memory-skill?style=flat-square&label=STARS&color=e37f2c&labelColor=333)](https://github.com/yanliudesign/stamp-memory-skill/stargazers)
 
 [![Claude Code](https://img.shields.io/badge/Claude_Code-Skill-d97757?style=flat-square&labelColor=1a1a1a&logo=anthropic&logoColor=white)](https://claude.ai/code)
 [![SKILL.md](https://img.shields.io/badge/Agent-SKILL.md-214f9b?style=flat-square&labelColor=1a1a1a)](./SKILL.md)
@@ -102,7 +102,7 @@ Turn this photo of me and my cat into a quiet cobalt bookplate stamp.
 Clone the repository into your Claude Code skills directory:
 
 ```bash
-git clone https://github.com/yanliudesign/stamp-memory.git \
+git clone https://github.com/yanliudesign/stamp-memory-skill.git \
   ~/.claude/skills/stamp-memory
 ```
 
@@ -143,7 +143,7 @@ If the active environment has no image-generation capability, the skill returns 
 ## Repository layout
 
 ```text
-stamp-memory/
+stamp-memory-skill/
 ├── SKILL.md                 # Trigger rules, workflow, visual DNA, and QA gate
 ├── README.md                # English documentation
 ├── README.zh.md             # 中文说明
