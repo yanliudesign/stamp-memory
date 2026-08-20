@@ -25,19 +25,24 @@
 
 <table>
   <tr>
-    <td align="center" width="33%"><a href="./summer-night-walk.png"><img src="./summer-night-walk.png" width="100%" alt="夏夜散步印章"></a><br><sub>夏夜散步</sub></td>
-    <td align="center" width="33%"><a href="./read-slowly-bookplate.png"><img src="./read-slowly-bookplate.png" width="100%" alt="慢慢读藏书票印章"></a><br><sub>慢慢读</sub></td>
-    <td align="center" width="33%"><a href="./starting-again-sprout.png"><img src="./starting-again-sprout.png" width="100%" alt="重新开始嫩芽印章"></a><br><sub>重新开始</sub></td>
+    <td align="center" width="33%"><a href="./examples/portrait-bookplate.png"><img src="./examples/portrait-bookplate.png" width="100%" alt="人物藏书票印章"></a><br><sub>人物藏书票</sub></td>
+    <td align="center" width="33%"><a href="./examples/bird-bookplate.png"><img src="./examples/bird-bookplate.png" width="100%" alt="鸟主题藏书票印章"></a><br><sub>鸟主题藏书票</sub></td>
+    <td align="center" width="33%"><a href="./examples/portrait-stamp.png"><img src="./examples/portrait-stamp.png" width="100%" alt="极简人物印章"></a><br><sub>极简人物</sub></td>
   </tr>
   <tr>
-    <td align="center" width="33%"><a href="./grandmothers-garden.png"><img src="./grandmothers-garden.png" width="100%" alt="外婆花园浇水壶印章"></a><br><sub>外婆的花园</sub></td>
-    <td align="center" width="33%"><img src="./examples-index.png" width="100%" alt="Stamp Memory 八个案例索引"></td>
-    <td align="center" width="33%"><a href="./grazing-deer-memory.png"><img src="./grazing-deer-memory.png" width="100%" alt="照片转低头鹿印章"></a><br><sub>照片转印章</sub></td>
+    <td align="center" width="33%"><a href="./examples/community-net.png"><img src="./examples/community-net.png" width="100%" alt="协作织网印章"></a><br><sub>协作织网</sub></td>
+    <td align="center" width="33%"><a href="./examples/mountain-river-museum.png"><img src="./examples/mountain-river-museum.png" width="100%" alt="山川博物馆印章"></a><br><sub>山川博物馆</sub></td>
+    <td align="center" width="33%"><a href="./examples/forest-animals.png"><img src="./examples/forest-animals.png" width="100%" alt="森林动物印章"></a><br><sub>森林动物</sub></td>
   </tr>
   <tr>
-    <td align="center" width="33%"><a href="./rainy-window.png"><img src="./rainy-window.png" width="100%" alt="雨窗印章"></a><br><sub>雨窗</sub></td>
-    <td align="center" width="33%"><a href="./pocket-orange.png"><img src="./pocket-orange.png" width="100%" alt="口袋橙子印章"></a><br><sub>口袋橙子</sub></td>
-    <td align="center" width="33%"><a href="./seaside-found-objects-sheet.png"><img src="./seaside-found-objects-sheet.png" width="100%" alt="十二枚海边拾物印章页"></a><br><sub>海边拾物</sub></td>
+    <td align="center" width="33%"><a href="./examples/agedashi-doufu.png"><img src="./examples/agedashi-doufu.png" width="100%" alt="扬出豆腐印章"></a><br><sub>扬出豆腐</sub></td>
+    <td align="center" width="33%"><a href="./examples/yamagata-fields.png"><img src="./examples/yamagata-fields.png" width="100%" alt="山形田野印章"></a><br><sub>山形田野</sub></td>
+    <td align="center" width="33%"><a href="./examples/eat-drink.png"><img src="./examples/eat-drink.png" width="100%" alt="饮食主题印章"></a><br><sub>好吃好喝</sub></td>
+  </tr>
+  <tr>
+    <td align="center" width="33%"><a href="./examples/branch-bird.png"><img src="./examples/branch-bird.png" width="100%" alt="枝上鸟印章"></a><br><sub>枝上鸟</sub></td>
+    <td align="center" width="33%"><a href="./examples/wuding-mark.png"><img src="./examples/wuding-mark.png" width="100%" alt="屋顶地点印章"></a><br><sub>地点小印</sub></td>
+    <td align="center" width="33%"><a href="./examples/bar-ikoi.png"><img src="./examples/bar-ikoi.png" width="100%" alt="Bar Ikoi 器皿印章"></a><br><sub>Bar Ikoi</sub></td>
   </tr>
 </table>
 
@@ -147,8 +152,7 @@ stamp-memory-skill/
 ├── SKILL.md                 # 触发规则、工作流、视觉 DNA 与质量检查
 ├── README.md                # English documentation
 ├── README.zh.md             # 中文说明
-├── examples-index.png       # 3×3 案例九宫格的中心索引卡
-└── *.png / *.svg            # 八个位图案例与对应的可编辑母版
+└── examples/                # 十二张位图参考示例
 ```
 
 ## 原创性

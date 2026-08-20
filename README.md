@@ -25,19 +25,24 @@ It preserves a visual system rather than copying a reference: restrained charcoa
 
 <table>
   <tr>
-    <td align="center" width="33%"><a href="./summer-night-walk.png"><img src="./summer-night-walk.png" width="100%" alt="Summer-night walk stamp"></a><br><sub>Summer-night walk</sub></td>
-    <td align="center" width="33%"><a href="./read-slowly-bookplate.png"><img src="./read-slowly-bookplate.png" width="100%" alt="Read slowly bookplate stamp"></a><br><sub>Read slowly</sub></td>
-    <td align="center" width="33%"><a href="./starting-again-sprout.png"><img src="./starting-again-sprout.png" width="100%" alt="Starting again sprout stamp"></a><br><sub>Starting again</sub></td>
+    <td align="center" width="33%"><a href="./examples/portrait-bookplate.png"><img src="./examples/portrait-bookplate.png" width="100%" alt="Portrait bookplate stamp"></a><br><sub>Portrait bookplate</sub></td>
+    <td align="center" width="33%"><a href="./examples/bird-bookplate.png"><img src="./examples/bird-bookplate.png" width="100%" alt="Bird bookplate stamp"></a><br><sub>Bird bookplate</sub></td>
+    <td align="center" width="33%"><a href="./examples/portrait-stamp.png"><img src="./examples/portrait-stamp.png" width="100%" alt="Minimal portrait stamp"></a><br><sub>Minimal portrait</sub></td>
   </tr>
   <tr>
-    <td align="center" width="33%"><a href="./grandmothers-garden.png"><img src="./grandmothers-garden.png" width="100%" alt="Grandmother's garden watering-can stamp"></a><br><sub>Grandmother's garden</sub></td>
-    <td align="center" width="33%"><img src="./examples-index.png" width="100%" alt="Stamp Memory eight examples index"></td>
-    <td align="center" width="33%"><a href="./grazing-deer-memory.png"><img src="./grazing-deer-memory.png" width="100%" alt="Photograph transformed into a grazing-deer stamp"></a><br><sub>Photo to stamp</sub></td>
+    <td align="center" width="33%"><a href="./examples/community-net.png"><img src="./examples/community-net.png" width="100%" alt="Community net stamp"></a><br><sub>Community net</sub></td>
+    <td align="center" width="33%"><a href="./examples/mountain-river-museum.png"><img src="./examples/mountain-river-museum.png" width="100%" alt="Mountain and river museum stamp"></a><br><sub>Mountain and river</sub></td>
+    <td align="center" width="33%"><a href="./examples/forest-animals.png"><img src="./examples/forest-animals.png" width="100%" alt="Forest animals stamp"></a><br><sub>Forest animals</sub></td>
   </tr>
   <tr>
-    <td align="center" width="33%"><a href="./rainy-window.png"><img src="./rainy-window.png" width="100%" alt="Rainy window stamp"></a><br><sub>Rainy window</sub></td>
-    <td align="center" width="33%"><a href="./pocket-orange.png"><img src="./pocket-orange.png" width="100%" alt="Pocket orange stamp"></a><br><sub>Pocket orange</sub></td>
-    <td align="center" width="33%"><a href="./seaside-found-objects-sheet.png"><img src="./seaside-found-objects-sheet.png" width="100%" alt="Sheet of twelve seaside found-object stamps"></a><br><sub>Seaside finds</sub></td>
+    <td align="center" width="33%"><a href="./examples/agedashi-doufu.png"><img src="./examples/agedashi-doufu.png" width="100%" alt="Agedashi doufu stamp"></a><br><sub>Agedashi doufu</sub></td>
+    <td align="center" width="33%"><a href="./examples/yamagata-fields.png"><img src="./examples/yamagata-fields.png" width="100%" alt="Yamagata fields stamp"></a><br><sub>Yamagata fields</sub></td>
+    <td align="center" width="33%"><a href="./examples/eat-drink.png"><img src="./examples/eat-drink.png" width="100%" alt="Eat and drink stamp"></a><br><sub>Eat and drink</sub></td>
+  </tr>
+  <tr>
+    <td align="center" width="33%"><a href="./examples/branch-bird.png"><img src="./examples/branch-bird.png" width="100%" alt="Bird on a branch stamp"></a><br><sub>Branch bird</sub></td>
+    <td align="center" width="33%"><a href="./examples/wuding-mark.png"><img src="./examples/wuding-mark.png" width="100%" alt="Wuding place mark"></a><br><sub>Wuding mark</sub></td>
+    <td align="center" width="33%"><a href="./examples/bar-ikoi.png"><img src="./examples/bar-ikoi.png" width="100%" alt="Bar Ikoi vessel stamp"></a><br><sub>Bar Ikoi</sub></td>
   </tr>
 </table>
 
@@ -147,8 +152,7 @@ stamp-memory-skill/
 ├── SKILL.md                 # Trigger rules, workflow, visual DNA, and QA gate
 ├── README.md                # English documentation
 ├── README.zh.md             # 中文说明
-├── examples-index.png       # Center tile for the 3×3 example gallery
-└── *.png / *.svg            # Eight raster examples and editable masters
+└── examples/                # Twelve raster reference examples
 ```
 
 ## Originality
